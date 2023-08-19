@@ -1,9 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ui_test/configs/AppAssets.dart';
-import 'package:ui_test/configs/AppColors.dart';
-import 'package:ui_test/configs/AppConst.dart';
 
 import 'TitleText.dart';
 

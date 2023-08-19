@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ui_test/configs/AppColors.dart';
+
+import '../configs/AppColors.dart';
 
 class TitleTextRoboto extends StatelessWidget {
   const TitleTextRoboto({

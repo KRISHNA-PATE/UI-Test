@@ -1,8 +1,9 @@
+import 'package:demo_test/configs/AppConst.dart';
 import 'package:get/get.dart';
 
 import 'package:flutter/material.dart';
-import 'package:ui_test/configs/AppColors.dart';
-import 'package:ui_test/configs/AppConst.dart';
+
+import '../configs/AppColors.dart';
 
 class ButtonWidget extends StatefulWidget {
   const ButtonWidget(
@@ -20,7 +21,8 @@ class ButtonWidget extends StatefulWidget {
   final Color? border_color;
   final double? textSize;
   final String text;
-  final VoidCallback onPressed;
+  final VoidCallback? onPressed;
+
 
   @override
   State<ButtonWidget> createState() => _ButtonWidgetState();
@@ -31,8 +33,8 @@ class _ButtonWidgetState extends State<ButtonWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 58,
-      height: 30,
+      width: 72,
+      height: 40,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
             // foregroundColor: widget.backgroundColor ?? AppColors.apptheme ,
@@ -40,17 +42,16 @@ class _ButtonWidgetState extends State<ButtonWidget> {
             padding: const EdgeInsets.symmetric(vertical: 6,horizontal: 12),
             shadowColor: Colors.transparent,
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(999))),
-        onPressed: () {
-        },
+                borderRadius: BorderRadius.circular(6))),
+        onPressed :widget.onPressed,
 
         child: Text(
             widget.text.tr,
             style: TextStyle(
-              fontFamily: "NotoSans",
+              fontFamily: "Roboto",
               color: widget.textColor ?? AppColors.white,
-              fontWeight: FontWeight.w500, letterSpacing: -0.12,
-              fontSize: widget.textSize ?? 12
+              fontWeight: FontWeight.w500,
+              fontSize: widget.textSize ?? 14
             )),
       ),
     );

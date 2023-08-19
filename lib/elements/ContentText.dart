@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ui_test/configs/AppColors.dart';
+
+import '../configs/AppColors.dart';
 
 class ContentText extends StatelessWidget {
   const ContentText({
@@ -29,9 +30,9 @@ class ContentText extends StatelessWidget {
           maxLines: maxLine,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
-            color: color ?? AppColors.normal,
-            fontSize: textSize ?? 12,
-            fontWeight: fontWeight ?? FontWeight.w400,
+            color: color ?? AppColors.white,
+            fontSize: textSize ?? 16,
+            fontWeight: fontWeight ?? FontWeight.w500,
             fontFamily: "Roboto",
             decoration: decoration??TextDecoration.none,
           ),
@@ -39,9 +40,9 @@ class ContentText extends StatelessWidget {
     }else {
       return Text(text.tr,
           style: TextStyle(
-            color: color ?? AppColors.normal,
-            fontSize: textSize ?? 12,
-            fontWeight: fontWeight ?? FontWeight.w400,
+            color: color ?? AppColors.white,
+            fontSize: textSize ?? 16,
+            fontWeight: fontWeight ?? FontWeight.w500,
             fontFamily: "Roboto",
             decoration: decoration??TextDecoration.none,
           ),

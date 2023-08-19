@@ -1,6 +1,6 @@
 {
-    "name": "ui_test",
-    "short_name": "ui_test",
+    "name": "demo_test",
+    "short_name": "demo_test",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
